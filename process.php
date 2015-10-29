@@ -25,7 +25,7 @@ $data           = array();      // array to pass back data
 
         // if there are no errors process our form, then return a message
 
-        echo "lmao";
+        console.log($_POST['firstname']);
 
         // show a message of success and provide a true success variable
         $data['success'] = true;
