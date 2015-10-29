@@ -25,11 +25,9 @@ $data           = array();      // array to pass back data
 
         // if there are no errors process our form, then return a message
 
-        console.log($_POST['firstname']);
-
         // show a message of success and provide a true success variable
         $data['success'] = true;
-        $data['message'] = 'Success!';
+        $data['message'] = $_POST['firstname'];
     }
 
     // return all our data to an AJAX call
