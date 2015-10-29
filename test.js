@@ -22,8 +22,8 @@ $(document).ready(function() {
             .done(function(data) {
 
                 document.getElementById("titleText").innerHTML = data['message'];
-                document.getElementById("titleText").class = "visible";
-                console.log(data); 
+                document.getElementById("titleText").className = "visible";
+                console.log(data['message']); 
 
                 // here we will handle errors and validation messages
             });
