@@ -7,14 +7,11 @@ $data           = array();      // array to pass back data
 // validate the variables ======================================================
     // if any of these variables don't exist, add an error to our $errors array
 
-    if (empty($_POST['name']))
-        $errors['name'] = 'Name is required.';
+    if (empty($_POST['firstname']))
+        $errors['firstname'] = 'Name is required.';
 
-    if (empty($_POST['email']))
-        $errors['email'] = 'Email is required.';
-
-    if (empty($_POST['superheroAlias']))
-        $errors['superheroAlias'] = 'Superhero alias is required.';
+    if (empty($_POST['lastname']))
+        $errors['lastname'] = 'Email is required.';
 
 // return a response ===========================================================
 
