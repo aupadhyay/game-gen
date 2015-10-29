@@ -21,7 +21,7 @@ $(document).ready(function() {
             // using the done promise callback
             .done(function(data) {
 
-                document.getElementById("titleText").innerHTML = data['firstname'];
+                document.getElementById("titleText").innerHTML = data['message'];
                 document.getElementById("titleText").class = "visible";
                 console.log(data); 
 
