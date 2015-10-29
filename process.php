@@ -25,8 +25,7 @@ $data           = array();      // array to pass back data
 
         // if there are no errors process our form, then return a message
 
-        // DO ALL YOUR FORM PROCESSING HERE
-        // THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
+        echo "lmao";
 
         // show a message of success and provide a true success variable
         $data['success'] = true;
