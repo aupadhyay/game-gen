@@ -25,6 +25,8 @@ $data           = array();      // array to pass back data
 
         // if there are no errors process our form, then return a message
 
+        
+
         // show a message of success and provide a true success variable
         $data['success'] = true;
         $data['message'] = $_POST['firstname'];

@@ -16,12 +16,13 @@ $(document).ready(function() {
             url         : 'process.php', // the url where we want to POST
             data        : formData, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
-                        encode          : true
+            encode      : true
         })
             // using the done promise callback
             .done(function(data) {
 
-                // log data to the console so we can see
+                document.getElementById("titleText").innerHTML = data['firstname'];
+                document.getElementById("titleText").class = "visible";
                 console.log(data); 
 
                 // here we will handle errors and validation messages

@@ -28,7 +28,7 @@
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container">
-          
+         	<div id="titleText" class="invisible"></div>
         </div>
     </div>
 

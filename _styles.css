@@ -44,3 +44,20 @@
 	width:50%;
 	margin-left: 22.5%;	
 }
+
+.rt-container{
+	width: 320px;
+	height: 480px;
+	border: 1px solid black;
+}
+
+.visible {
+	visibility: visible;
+    position: static;
+}
+
+.invisible{
+	visibility: hidden;
+    position: absolute;
+    top: -9999px;
+}
