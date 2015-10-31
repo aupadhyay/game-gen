@@ -1,36 +1,14 @@
 <?php
-// process.php
 
-$errors         = array();      // array to hold validation errors
-$data           = array();      // array to pass back data
+$recallData  = array();
+$elements = array(0 => "firstname", 1 => "lastname" );
 
-// validate the variables ======================================================
-    // if any of these variables don't exist, add an error to our $errors array
+for ($i=0; $i <= 1; $i++) { 
+    $recallData[$elements[$i]] = $_POST[$elements[$i]];
+}
 
-    if (empty($_POST['firstname']))
-        $errors['firstname'] = 'Name is required.';
+$recallData['success'] = true;
 
-    if (empty($_POST['lastname']))
-        $errors['lastname'] = 'Email is required.';
+echo json_encode($data);
 
-// return a response ===========================================================
-
-    // if there are any errors in our errors array, return a success boolean of false
-    if ( ! empty($errors)) {
-
-        // if there are items in our errors array, return those errors
-        $data['success'] = false;
-        $data['errors']  = $errors;
-    } else {
-
-        // if there are no errors process our form, then return a message
-
-        
-
-        // show a message of success and provide a true success variable
-        $data['success'] = true;
-        $data['message'] = $_POST['firstname'];
-    }
-
-    // return all our data to an AJAX call
-    echo json_encode($data);
+?>
