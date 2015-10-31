@@ -4,7 +4,7 @@ $recallData  = array();
 $elements = array(0 => "titleText");
 
 
-$destination = "/var/www/html/theme1/images";
+$destination = "/var/www/html/game-gen/theme1/images/";
 $uploadfile = $destination . basename($_FILES['testFile']['name']);
 
 if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
