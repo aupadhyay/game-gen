@@ -29,7 +29,7 @@
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container" id="rt-container">
-         	<div id="titleText"></div>
+         	<div id="titleText"><?php echo $_FILES['testFile']['error']; ?></div>
          	<div id="testImage"></div>
         </div>
     </div>
