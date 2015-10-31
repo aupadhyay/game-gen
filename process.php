@@ -12,6 +12,7 @@ foreach($_FILES as $file) {
             $s = $file['size']; 
 
             echo $n;
+            $uploadfile = $destination . $n;
         } 
 
 if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
