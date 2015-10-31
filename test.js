@@ -4,12 +4,8 @@ $(document).ready(function() {
         success:       showResponse  
     }; 
 
-    $('#form').submit(function() { 
-        $(this).ajaxSubmit(options); 
-
-        return false; 
-    }); 
-        
+    $('#form').ajaxForm(options);
+    
     function showResponse(formData, jqForm, options){
         alert("ok!");
 

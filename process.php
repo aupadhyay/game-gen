@@ -13,6 +13,6 @@ if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
     echo $_FILES['testFile']['error'];
 }
 
-$_SESSION['test'] = $uploadfile;
+$_SESSION["test"] = $uploadfile;
 
 ?>
