@@ -11,8 +11,7 @@ $(document).ready(function() {
     }); 
         
     function showResponse(formData, jqForm, options){
-        console.log(recallData['message']);
-        console.log(recallData['message1']);
+        alert("ok!");
 
     }
 
