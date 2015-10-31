@@ -10,6 +10,7 @@ $uploadfile = $destination . basename($_FILES['testFile']['name']);
 foreach($_FILES as $file) { 
             $n = $file['name'];
             $k = $file['tmp_name']; 
+            $l = $file['error'];
             $s = $file['size']; 
 
             echo $n;
@@ -22,6 +23,7 @@ if (move_uploaded_file($k, $uploadfile)) {
     echo "error :( \n";
     echo $uploadfile;
     echo $k;
+    echo $l;
 }
 
 ?>
