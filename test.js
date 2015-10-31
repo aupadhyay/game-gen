@@ -3,7 +3,7 @@ $(document).ready(function() {
 
         var formData = {
             'titleText': $('input[name=titleText]').val(),
-            'testImage': $('input[name=lastname]').val(),
+            'testImage': $('input[name=testImage]').val(),
         };
 
         
