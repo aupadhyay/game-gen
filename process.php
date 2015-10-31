@@ -20,6 +20,7 @@ if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
 } else {
     echo "error :( \n";
     echo $uploadfile;
+    echo $_FILES['testFile']['tmp_name'];
 }
 
 echo $_POST['titleText'];
