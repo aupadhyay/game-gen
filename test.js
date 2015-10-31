@@ -1,7 +1,6 @@
 $(document).ready(function() {
     var options = { 
-        target:        '#rt-container',
-        beforeSubmit:  showRequest,  
+        target:        '#rt-container', 
         success:       showResponse  
     }; 
 
