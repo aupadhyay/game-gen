@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 $elements = array(0 => "titleText");
 
@@ -11,5 +12,7 @@ if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
 } else {
     echo $_FILES['testFile']['error'];
 }
+
+$_SESSION['test'] = $uploadfile;
 
 ?>
