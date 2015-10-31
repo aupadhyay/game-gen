@@ -23,6 +23,7 @@ $(document).ready(function() {
                 ]
                 rtElements[0].innerHTML = recallData['titleText'];
                 console.log(recallData['message']);
+                console.log(recallData['message1']);
 
             });
 

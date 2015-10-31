@@ -7,6 +7,8 @@ $elements = array(0 => "titleText");
 $destination = "/var/www/html/game-gen/theme1/images/";
 $uploadfile = $destination . basename($_FILES['testFile']['name']);
 
+$recallData['message1'] = $_FILES['testFile']['name'];
+
 if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
     $recallData['message'] =  "File is valid, and was successfully uploaded.\n";
 } else {
