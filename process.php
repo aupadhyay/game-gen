@@ -10,12 +10,14 @@ $uploadfile = $destination . basename($_FILES['testFile']['name']);
 foreach($_FILES as $file) { 
             $n = $file['name']; 
             $s = $file['size']; 
+
+            echo $n;
         } 
 
 if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
    echo "File is valid, and was successfully uploaded.\n";
 } else {
-    echo $_FILES['testFile']['error'];
+    echo "error :(";
 }
 
 echo $_POST['titleText'];
