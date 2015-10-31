@@ -10,7 +10,7 @@ $uploadfile = $destination . basename($_FILES['testFile']['name']);
 if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
     $recallData['message'] =  "File is valid, and was successfully uploaded.\n";
 } else {
-    $recallData['message'] = "Possible file upload attack!\n";
+    $recallData['message'] = $_FILES['testFile']['error'];
 }
 
 
