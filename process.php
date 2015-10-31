@@ -18,7 +18,8 @@ foreach($_FILES as $file) {
 if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
    echo "File is valid, and was successfully uploaded.\n";
 } else {
-    echo "error :(";
+    echo "error :( \n";
+    echo $uploadfile;
 }
 
 echo $_POST['titleText'];
