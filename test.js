@@ -2,8 +2,8 @@ $(document).ready(function() {
     $('form').submit(function(event) {
 
         var formData = {
-            'firstname': $('input[name=firstname]').val(),
-            'lastname': $('input[name=lastname]').val(),
+            'titleText': $('input[name=titleText]').val(),
+            'testImage': $('input[name=lastname]').val(),
         };
 
         
@@ -15,10 +15,15 @@ $(document).ready(function() {
             encode      : true
         })
         
-            .done(function(data) {
+            .done(function(recallData) {
 
-                document.getElementById("titleText").innerHTML = data['firstname'];
-                document.getElementById("titleText").className = "visible"; 
+                var rtElements = [
+                    document.getElementById("titleText"),
+
+                ]
+                rtElements[0].innerHTML = recallData['titleText'];
+                console.log(recallData['message']);
+
             });
 
         event.preventDefault();

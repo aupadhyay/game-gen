@@ -13,12 +13,12 @@
       <h2>Setup</h2>
         <button type="button" class="theme" data-toggle="collapse" data-target="#demo">Brick Breaker</button>
         <div id="demo" class="collapse out">
-          <form class="form-setup" action="process.php" method="POST">
+          <form class="form-setup" action="process.php" method="POST" enctype="multipart/form-data">
             <div class="test">
               <p>Title: </p>
-              <input type="text" name="firstname"><br>
+              <input type="text" name="titleText"><br>
               <p>Your Name: </p>
-              <input type="text" name="lastname">
+              <input type="file" name="testImage">
               <input type="submit">
             </div>
           </form>
@@ -28,7 +28,8 @@
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container">
-         	<div id="titleText" class="visible"></div>
+         	<div id="titleText"></div>
+         	<div id="testImage"></div>
         </div>
     </div>
 
