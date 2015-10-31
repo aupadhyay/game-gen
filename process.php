@@ -18,6 +18,6 @@ if (move_uploaded_file($_FILES['testFile']['tmp_name'], $uploadfile)) {
     echo $_FILES['testFile']['error'];
 }
 
-$_SESSION["test"] = $n;
+$_SESSION["test"] = $_POST['titleText'];
 
 ?>
