@@ -11,7 +11,6 @@
 			<hr>
 			<form id="uploadimage" action="" method="post" enctype="multipart/form-data">
 				<div id="image_preview"><img id="previewing" src="noimage.png" /></div>
-					<hr id="line">
 					<div id="selectImage">
 						<label>Select Your Image</label><br/>
 						<input type="file" name="file" id="file" required />
