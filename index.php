@@ -10,7 +10,7 @@ session_start();
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
       
-      <script src="jquery.form.min.js"></script>
+      <script src="test.js"></script>
   </head> 
 
   <body>
@@ -33,8 +33,7 @@ session_start();
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container" id="rt-container">
-         	<div id="titleText"><?php echo $_POST["titleText"]; ?></div>
-         	<div id="testImage"><img src="<?php echo $_POST['titleText']; ?>"></div>
+         	<div ><img id="testImageText" src="none.png"></div>
         </div>
     </div>
 
