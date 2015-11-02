@@ -33,7 +33,7 @@ session_start();
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container" id="rt-container">
-         	<div ><img id="testImageText" src="none.png"></div>
+         	<div><img id="testImageText" src="none.png"></div>
         </div>
     </div>
 

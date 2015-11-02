@@ -23,9 +23,10 @@ $(document).ready(function() {
 	});
 
 function imageIsLoaded(e) {
-$("#testImage").css("color","green");
-$('#testImageText').attr('src', e.target.result);
+	
 $('#testImageText').attr('width', '250px');
 $('#testImageText').attr('height', '230px');
+
+$('#rt-container').load(document.URL +  ' #rt-container');
 };
 });
