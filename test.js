@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 // Function to preview image after validation
 	$(function() {
-		$("#testImage").change(function() {	
+		$(".myClass").change(function() {	
 			var file = this.files[0];
 			var imagefile = file.type;
 			var reader = new FileReader();
@@ -22,11 +22,8 @@ $(document).ready(function() {
 		});
 	});
 
-function imageIsLoaded(e) {
-	
-$('#testImageText').attr('width', '250px');
-$('#testImageText').attr('height', '230px');
-
-$('#rt-container').load(document.URL +  ' #rt-container');
-};
+	function imageIsLoaded(e) {
+		$('#testImageText').attr('src', e.target.result);
+		$('#testImageText1').attr('src', e.target.result);
+	};
 });

@@ -23,7 +23,8 @@ session_start();
               <p>Title: </p>
               <input type="text" name="titleText"><br>
               <p>Your Name: </p>
-              <input type="file" name="testImage" id="testImage">
+              <input type="file" name="testImage" class="myClass" ="testImage">
+              <input type="file" name="testImage1" class="myClass" ="testImage1">
               <input type="submit">
             </div>
           </form>
@@ -34,6 +35,7 @@ session_start();
       <h2>Realtime</h2>
         <div class="rt-container" id="rt-container">
          	<div><img id="testImageText" src="none.png"></div>
+          <div><img id="testImageText1" src="none.png"></div>
         </div>
     </div>
 
