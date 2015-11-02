@@ -18,14 +18,13 @@ $(document).ready(function() {
 			var file = image.files[0];
 			var imagefile = file.type;
 			var reader = new FileReader();
-			reader.onload = imageIsLoaded;
+			reader.onload = function (e) {
+				var target = image.attr('rt-target');
+				console.log(target);
+				$('#target').attr('src', e.target.result);
+			};
 			reader.readAsDataURL(this.files[0]);
 		});
 	});
 
-	function imageIsLoaded(e) {
-		var target = image.attr('rt-target');
-		console.log(target);
-		$('#target').attr('src', e.target.result);
-	};
 });
