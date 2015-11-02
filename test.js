@@ -14,7 +14,8 @@ $(document).ready(function() {
 // Function to preview image after validation
 	$(function() {
 		$(".myClass").change(function() {	
-			var file = this.files[0];
+			var image = this.
+			var file = image.files[0];
 			var imagefile = file.type;
 			var reader = new FileReader();
 			reader.onload = imageIsLoaded;
@@ -23,7 +24,8 @@ $(document).ready(function() {
 	});
 
 	function imageIsLoaded(e) {
-		$('#testImageText').attr('src', e.target.result);
-		$('#testImageText1').attr('src', e.target.result);
+		var target = image.attr('rt-target');
+		console.log(target);
+		$('#target').attr('src', e.target.result);
 	};
 });
