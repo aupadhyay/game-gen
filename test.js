@@ -21,7 +21,7 @@ $(document).ready(function() {
 			reader.onload = function (e) {
 				var target = $image.attr('rt-target');
 				console.log(target);
-				$('#target').attr('src', e.target.result);
+				$('#' + target).attr('src', e.target.result);
 			};
 			reader.readAsDataURL(this.files[0]);
 		});
