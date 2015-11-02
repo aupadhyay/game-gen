@@ -21,7 +21,11 @@ else
 $sourcePath = $_FILES['file']['tmp_name']; // Storing source path of the file in a variable
 $targetPath = "upload/".$_FILES['file']['name']; // Target path where file is to be stored
 move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file
-echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
+if(move_uploaded_file($sourcePath, $target_path)) {
+	echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
+} else{
+	echo "We never received your file!";
+}
 echo "<br/><b>File Name:</b> " . $_FILES["file"]["name"] . "<br>";
 echo "<b>Type:</b> " . $_FILES["file"]["type"] . "<br>";
 echo "<b>Size:</b> " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
