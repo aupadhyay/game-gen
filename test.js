@@ -14,7 +14,7 @@ $(document).ready(function() {
 // Function to preview image after validation
 	$(function() {
 		$(".myClass").change(function() {	
-			var image = this.
+			var image = this
 			var file = image.files[0];
 			var imagefile = file.type;
 			var reader = new FileReader();
