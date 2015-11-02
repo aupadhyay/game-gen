@@ -24,7 +24,7 @@ move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file
 if(move_uploaded_file($sourcePath, $target_path)) {
 	echo "<span id='success'>Image Uploaded Successfully...!!</span><br/>";
 } else{
-	echo "We never received your file!";
+	echo "We never received your file!<br>". $sourcePath;
 }
 echo "<br/><b>File Name:</b> " . $_FILES["file"]["name"] . "<br>";
 echo "<b>Type:</b> " . $_FILES["file"]["type"] . "<br>";
