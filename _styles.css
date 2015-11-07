@@ -25,7 +25,7 @@
 
 }
 
-.form-setup input{
+.form-setup input, .formObject{
 	display: inline;
 	width: 60%;
 	float:right;
