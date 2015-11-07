@@ -2,9 +2,8 @@
 	require('upload.php');
 	$items = array('paddle', 'testImage1');
 	
-
-	uploadImage($items[0]);
-
-	
+	for ($i=0; $i <= 1; $i++) { 
+		uploadImage($items[$i]);
+	}
 		
 ?>
