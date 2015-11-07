@@ -22,12 +22,8 @@ session_start();
             <div class="test" id="test">
               <p>Title: </p>
               <input type="text" name="titleText"><br>
-              <!--<p>Paddle: </p>
-              <input type="file" name="paddle" class="formObject" rt-target="paddleImage"><br>
-              <p>Ball: </p>
-              <input type="file" name="ball" class="formObject" rt-target="testImageText1">!-->
-              <input type="submit">
             </div>
+            <input type="submit">
           </form>
       </div>
     </div>
@@ -42,10 +38,10 @@ session_start();
     
 
   <script>
-    var array = new Array("Paddle", "Ball", "BMW");
+    var array = new Array("Paddle", "Ball", "BMW", "Abhi!");
     var div = document.getElementById('test');
     for (var i = array.length - 1; i >= 0; i--) {
-      div.innerHTML = div.innerHTML + '<p>' + array[i] + ': </p> <input type="file" name="' + array[i] + '" class="formObject" rt-target="'+ array[i]+'Image">';
+      div.innerHTML = div.innerHTML + '<p>' + array[i] + ': </p>  <input type="file" name="' + array[i] + '" class="formObject" rt-target="'+ array[i]+'Image"> <br>';
     };
     
   </script>
