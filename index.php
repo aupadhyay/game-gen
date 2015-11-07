@@ -41,7 +41,7 @@ session_start();
     var array = new Array("Paddle", "Ball", "BMW", "Abhi!");
     var div = document.getElementById('test');
     for (var i = 0; i <= array.length - 1; i++) {
-      div.innerHTML = div.innerHTML + '<p>' + array[i] + ': </p>  <input type="file" name="' + array[i] + '" class="formObject" rt-target="'+ array[i]+'Image"> <br>';
+      div.innerHTML = div.innerHTML + '<p style="float:left;">' + array[i] + ': </p>  <input type="file" name="' + array[i] + '" class="formObject" rt-target="'+ array[i]+'Image"> <br>';
     };
     
   </script>
