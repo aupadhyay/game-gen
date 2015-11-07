@@ -94,7 +94,7 @@ if (!defined('VERSION_FILE')) define('VERSION_FILE', TMP_DIR.'VERSION');
  * Time limit for each command.
  *
  * @var int Time in seconds
- */
+ */	
 if (!defined('TIME_LIMIT')) define('TIME_LIMIT', 30);
 /**
  * OPTIONAL
