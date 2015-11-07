@@ -1,7 +1,6 @@
 <?php
 function uploadImage($selector){
-echo $selector;
-$target_dir = "images/";
+$target_dir = "brick-breaker/images/";
 $imageFileType = pathinfo($target_dir . basename($_FILES[$selector]["name"]),PATHINFO_EXTENSION);
 $target_file = $target_dir . $selector . "." . $imageFileType;
 $uploadOk = 1;
