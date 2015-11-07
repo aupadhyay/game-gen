@@ -23,7 +23,7 @@ session_start();
               <p>Title: </p>
               <input type="text" name="titleText"><br>
               <p>Your Name: </p>
-              <input type="file" name="paddle" class="formObject" id="testImage" rt-target="testImageText">
+              <input type="file" name="paddle" class="formObject" id="paddle" rt-target="testImageText">
               <input type="file" name="testImage1" class="formObject" id="testImage1" rt-target="testImageText1">
               <input type="submit">
             </div>
