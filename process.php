@@ -3,7 +3,7 @@
 	$items = array('paddle', 'testImage1');
 	
 
-	uploadImage('paddle');
+	uploadImage($items[0]);
 
 	
 		
