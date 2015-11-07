@@ -3,7 +3,7 @@ function uploadImage($selector){
 echo $selector;
 $target_dir = "images/";
 $imageFileType = pathinfo($target_dir . basename($_FILES[$selector]["name"]),PATHINFO_EXTENSION);
-$target_file = $target_dir . basename($_FILES[$selector]["name"]);
+$target_file = $target_dir . $selector . "." . $imageFileType;
 $uploadOk = 1;
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
