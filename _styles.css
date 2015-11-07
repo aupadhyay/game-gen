@@ -25,14 +25,13 @@
 
 }
 
-.form-setup input, .formObject{
-	display: inline;
+/**.form-setup input{
+	display: inline;	
 	width: 60%;
 	float:right;
 	margin-top: 10px;
 }
 
-.form-setup p{
 	margin-top: 10px;
 	margin-bottom: 0px;
 	padding-right: 10px;
@@ -42,7 +41,7 @@
 	float:left;
 	display: inline;
 	
-}
+}**/
 
 .test{
 	width:50%;
