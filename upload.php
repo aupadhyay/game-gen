@@ -1,5 +1,6 @@
 <?php
 function uploadImage($selector){
+echo $selector;
 $target_dir = "images/";
 $imageFileType = pathinfo($target_dir . basename($_FILES[$selector]["name"]),PATHINFO_EXTENSION);
 $target_file = $target_dir . basename($_FILES[$selector]["name"]);
