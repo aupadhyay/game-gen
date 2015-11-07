@@ -31,8 +31,8 @@ session_start();
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container" id="rt-container">
-         	<img id="paddleImage" class="rt-object" src="none.png" width="88" height="14" style="margin-left: 36px; margin-top: 393px ;">
-          <img id="ballImage" src="none.png" width="20" height="20">
+         	<img id="PaddleImage" class="rt-object" src="none.png" width="88" height="14" style="margin-left: 36px; margin-top: 393px ;">
+          <img id="BallImage" src="none.png" width="20" height="20">
         </div>
     </div>
     
