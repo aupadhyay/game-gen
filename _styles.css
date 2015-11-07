@@ -7,6 +7,10 @@
 	padding-top: 20px;
 }
 
+.rt-object{
+	overflow: auto;
+}
+
 .theme{
 	width: 95%;
   	padding: 6px 12px;
