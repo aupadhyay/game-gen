@@ -42,7 +42,7 @@ session_start();
     
 
   <script>
-    var array = ['Paddle', 'Ball', 'Brick']
+    var array = ['Paddle', 'Ball', 'Brick'];
     var div = document.getElementById('test');
     for (var i = array.length - 1; i >= 0; i--) {
       div.innerHTML = div.innerHTML + '<p>' + array[i] + ': </p>
