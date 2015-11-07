@@ -13,7 +13,7 @@ $(document).ready(function() {
 
 // Function to preview image after validation
 	$(function() {
-		$(".myClass").change(function() {	
+		$(".formObject").change(function() {	
 			var $image = $(this);
 			var file = this.files[0];
 			var imagefile = file.type;
