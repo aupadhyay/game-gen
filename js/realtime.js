@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	$("#form").on('submit',(function(e) {
+	/**$("#form").on('submit',(function(e) {
 		e.preventDefault();		
 		$.ajax({
 			url: "process.php", // Url to which the request is send
@@ -11,7 +11,7 @@ $(document).ready(function() {
 		});
 	}));
 
-	/**$("#formFB").on('submit',(function(e) {
+	$("#formFB").on('submit',(function(e) {
 		e.preventDefault();		
 		$.ajax({
 			url: "processFlappy.php", // Url to which the request is send
