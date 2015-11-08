@@ -26,22 +26,22 @@ $(document).ready(function() {
 					type: "POST",             // Type of request to be send, called as method
 					data: { target : $image.attr('name'), theme: $image.attr('theme') }, // Data sent to server, a set of key/value pairs (i.e. form fields and values)
 					contentType: false,       // The content type used when sending data to the server.
-					cache: false,             // To unable request pages to be cached
-					processData:false        // To send DOMDocument or non processed data file it is set to false
-				})
-				.done(function() {
-					console.log("test");
-    				function reqListener () {
-      					console.log(this.responseText);
-    				}
+					cache: false, 
+					success:function(result){
+        				console.log("test");
+    					function reqListener () {
+      						console.log(this.responseText);
+    					}
 
-    				var oReq = new XMLHttpRequest();
-   					oReq.onload = function() {
-        				alert(this.responseText);
-    				};
-    				oReq.open("get", "../processxy.php", true);
-    				oReq.send();
-  				});
+    					var oReq = new XMLHttpRequest();
+   						oReq.onload = function() {
+        					alert(this.responseText);
+    					};
+    					oReq.open("get", "../processxy.php", true);
+    					oReq.send();
+       				},
+					processData:false        // To send DOMDocument or non processed data file it is set to false
+				});
 				
 
 				$('#' + target).attr('src', e.target.result);
