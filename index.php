@@ -40,6 +40,18 @@
             </form>
           </div>
         </div>
+
+        <div class="cd">
+          <button type="button" class="theme" id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">Flappy Bird</button>
+          <div id="cd-collapse" class="collapse out">
+            <form class="form-setup" id="formCD" action="processCD.php" method="POST" enctype="multipart/form-data">
+              <div class="cd-form" id="cd-form">
+               <!-- Added Stuff from Javascript !-->
+              </div>
+              <input type="submit">
+            </form>
+          </div>
+        </div>
     </div>
 
     <div class="main">
@@ -60,8 +72,10 @@
             <img id="GroundImage" class="rt-object" src="none.png" width="320" height="50" style="margin-left: 0px; margin-top: 430px;">
           </div>
            <div class="rt-container-cd" name="rt-container-cd" id="rt-container-cd" style="visibility:hidden;">
-            <img id="PaddleImage" class=  "rt-object" src="none.png" width="88" height="14" style="margin-left: 36px; margin-top: 393px ;">
-            <img id="BallImage" src="none.png" width="20" height="20">
+            <img id="BGImage" class="rt-object" src="none.png" width="320" height="480" style="margin-left: 0px; margin-top: 0px;">
+            <img id="Pause-ButtonImage" class="rt-object" src="none.png" width="20" height="20" style="margin-left: 280px; margin-top: 20px;">
+            <img id="Enemy1Image" class="rt-object" src="none.png" width="33" height="18" style="margin-left: 124px; margin-top: 231px;">
+            <img id="Enemy2Image" class="rt-object" src="none.png" width="33" height="18" style="margin-left: 164px; margin-top: 231px;">
           </div>
         </div>
     </div>
@@ -72,11 +86,19 @@
       function setFlappyVisible () {
         $('#rt-container-flappy').attr('style', 'visibility:visible;'); 
         $('#theme1').attr('style', 'visibility:hidden;'); 
+        $('#theme3').attr('style', 'visibility:hidden;'); 
+      }
+
+      function setCDVisible () {
+        $('#rt-container-cd').attr('style', 'visibility:visible;'); 
+        $('#theme1').attr('style', 'visibility:hidden;');
+        $('#theme2').attr('style', 'visibility:hidden;'); 
       }
 
       function setBrickVisible () {
         $('#rt-container-brick').attr('style', 'visibility:visible;'); 
         $('#theme2').attr('style', 'visibility:hidden;'); 
+        $('#theme3').attr('style', 'visibility:hidden;'); 
       }
     </script>
 
