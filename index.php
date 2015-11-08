@@ -63,11 +63,10 @@ session_start();
     
     <script src="js/autoHTML.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
+    
       function setDivVisible (selector) {
         $('rt-container-' + selector).attr('style', 'visibility:visible;'); 
       }
-    }
     </script>
 
   </body>
