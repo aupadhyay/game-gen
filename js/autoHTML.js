@@ -1,4 +1,4 @@
-var brickArray = new Array(	new Array("Title", 0),
+var brickArray = new Array(
 						new Array("Paddle", 1),
 					  	new Array("Ball", 1),
 					  	new Array("Brick", 1),
@@ -15,7 +15,7 @@ for (var i = 0; i <= brickArray.length - 1; i++) {
 };
 
 
-var flappyArray = new Array(new Array("Title", 0),
+var flappyArray = new Array(
 						new Array("Bird", 1),
 					  	new Array("TopPipes", 1),
 					  	new Array("BottomPipes", 1),
