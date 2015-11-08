@@ -38,5 +38,7 @@
 }
 
 .form-label{
+	width: 50%
+	text-align:right;
 	margin: 0px 0px 0px 0px;
 }
