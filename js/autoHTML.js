@@ -22,8 +22,7 @@ var flappyArray = new Array(new Array("Title", 0),
 					  	new Array("Ground", 1),
 					  	new Array("BackgroundF", 1),
 					  	new Array("Distance-Between-Pipes", 0),
-					  	new Array("Scroll-Speed", 0),
-					  	new Array("Gravity", 0));
+					  	new Array("Scroll-Speed", 0));
 var div = document.getElementById('fb-form');
 for (var i = 0; i <= flappyArray.length - 1; i++) {
 	if(flappyArray[i][1] == 1) { //Image Ex. Paddle
