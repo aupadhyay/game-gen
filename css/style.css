@@ -39,6 +39,7 @@
 
 .form-label{
 	display:inline-block;
+	height:20px;
 	width: 45%;
 	float:left;
 	text-align:right;
