@@ -18,7 +18,7 @@ session_start();
     <div class="main">
       <h2>Setup</h2>
         <div class="bb">
-          <button type="button" class="theme" data-toggle="collapse" data-target="#bb-collapse" onclick="setDivVisible('brick')">Brick Breaker</button>
+          <button type="button" class="theme" data-toggle="collapse" data-target="#bb-collapse" onclick="setFlappyVisible()">Brick Breaker</button>
           <div id="bb-collapse" class="collapse out">
             <form class="form-setup" id="form" action="process.php" method="POST" enctype="multipart/form-data">
               <div class="bb-form" id="bb-form">
@@ -31,7 +31,7 @@ session_start();
 
 
         <div class="fb">
-          <button type="button" class="theme" data-toggle="collapse" data-target="#fb-collapse" onclick="setDivVisible('flappy')">Flappy Bird</button>
+          <button type="button" class="theme" data-toggle="collapse" data-target="#fb-collapse" onclick="setFlappyVisible()">Flappy Bird</button>
           <div id="fb-collapse" class="collapse out">
             <form class="form-setup" id="form" action="process.php" method="POST" enctype="multipart/form-data">
               <div class="fb-form" id="fb-form">
@@ -64,8 +64,8 @@ session_start();
     <script src="js/autoHTML.js"></script>
     <script type="text/javascript">
     
-      function setDivVisible (selector) {
-        $('rt-container-' + selector).attr('style', 'visibility:visible;'); 
+      function setFlappyVisible () {
+        $('rt-container-flappy').attr('style', 'visibility:visible;'); 
       }
     </script>
 
