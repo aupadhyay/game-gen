@@ -15,7 +15,7 @@
 
 <body>
     <div class="main">
-      <h2>Setup</h2>
+      <h2>Customizable Options</h2>
         <div class="bb">
           <button type="button" class="btn btn-danger btn-block" id="theme1" data-toggle="collapse" data-target="#bb-collapse" onclick="setBrickVisible()">Brick Breaker</button>
           <div id="bb-collapse" class="collapse out">
@@ -88,20 +88,14 @@
     
       function setFlappyVisible () {
         $('#rt-container-flappy').attr('style', 'visibility:visible;'); 
-        $('#theme1').attr('style', 'visibility:hidden;'); 
-        $('#theme3').attr('style', 'visibility:hidden;'); 
       }
 
       function setCDVisible () {
         $('#rt-container-cd').attr('style', 'visibility:visible;'); 
-        $('#theme1').attr('style', 'visibility:hidden;');
-        $('#theme2').attr('style', 'visibility:hidden;'); 
       }
 
       function setBrickVisible () {
         $('#rt-container-brick').attr('style', 'visibility:visible;'); 
-        $('#theme2').attr('style', 'visibility:hidden;'); 
-        $('#theme3').attr('style', 'visibility:hidden;'); 
       }
     </script>
 
