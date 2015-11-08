@@ -33,8 +33,3 @@ for (var i = 0; i <= flappyArray.length - 1; i++) {
 	}
 	
 };
-
-
-
-
-<img id="PaddleImage" class="rt-object" src="none.png" width="100" height="100" style="margin-left: 36px; margin-top: 393px ;">
