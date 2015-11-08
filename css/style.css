@@ -35,6 +35,7 @@
 .rt-container{
 	width: 320px;
 	height: 480px;
+	position: relative;
 	border: 1px solid black;
 }
 
@@ -54,12 +55,6 @@
 	float:right;
 	text-align: left;
 	margin:0px 0px 12px 0px;
-}
-
-.rt-container{
-	width: 100px;
-	height: 100px;
-	position: relative;
 }
 
 .rt-container-brick, .rt-container-flappy, .rt-container-cd{
