@@ -11,7 +11,7 @@ $(document).ready(function() {
 		});
 	}));
 
-	$("#formFB").on('submit',(function(e) {
+	/**$("#formFB").on('submit',(function(e) {
 		e.preventDefault();		
 		$.ajax({
 			url: "processFlappy.php", // Url to which the request is send
@@ -21,7 +21,7 @@ $(document).ready(function() {
 			cache: false,             // To unable request pages to be cached
 			processData:false        // To send DOMDocument or non processed data file it is set to false
 		});
-	}));
+	}));**/
 
 // Function to preview image after validation
 	$(function() {
