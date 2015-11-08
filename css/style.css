@@ -46,7 +46,7 @@
 }
 
 .formObject{
-	display:inline-block
+	display:inline-block;
 	width:50%;
 	float:right;
 	text-align: left;
