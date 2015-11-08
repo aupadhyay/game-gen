@@ -4,8 +4,7 @@ var brickArray = new Array(	new Array("Title", 0),
 					  	new Array("Ball", 1),
 					  	new Array("Brick", 1),
 					  	new Array("Background", 1),
-					  	new Array("PauseButton", 1),
-					  	new Array("Number-of-Bricks", 1));
+					  	new Array("PauseButton", 1));
 var div = document.getElementById('bb-form');
 for (var i = 0; i <= brickArray.length - 1; i++) {
 	if(brickArray[i][1] == 1) { //Image Ex. Paddle
@@ -20,8 +19,10 @@ for (var i = 0; i <= brickArray.length - 1; i++) {
 var flappyArray = new Array(new Array("Title", 0),
 						new Array("Author", 0),
 						new Array("Bird", 1),
-					  	new Array("Pipes", 1),
+					  	new Array("TopPipes", 1),
+					  	new Array("BottomPipes", 1),
 					  	new Array("Ground", 1),
+					  	new Array("BackgroundF", 1),
 					  	new Array("Distance-Between-Pipes", 0),
 					  	new Array("Gravity", 0));
 var div = document.getElementById('fb-form');
