@@ -55,3 +55,21 @@
 	text-align: left;
 	margin:0px 0px 12px 0px;
 }
+
+.rt-container{
+	width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.rt-container-brick, .rt-container-flappy, .rt-container-cd{
+	width: 100%;
+  	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.rt-container-flappy, .rt-container-cd{
+	z-index: 10;
+}
