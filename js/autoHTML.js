@@ -1,5 +1,5 @@
 var array = new Array(	new Array("Title", 0),
-						new Array("Author", 0)
+						new Array("Author", 0),
 						new Array("Paddle", 1),
 					  	new Array("Ball", 1),
 					  	new Array("Brick", 1),
