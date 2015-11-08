@@ -87,14 +87,20 @@
     <script type="text/javascript">
     
       function setFlappyVisible () {
-        $('#rt-container-flappy').attr('style', 'visibility:visible;'); 
+        $('#rt-container-flappy').attr('style', 'visibility:visible;');
+        $('#rt-container-cd').attr('style', 'visibility:hidden;'); 
+        $('#rt-container-brick').attr('style', 'visibility:hidden;');
       }
 
       function setCDVisible () {
+        $('#rt-container-flappy').attr('style', 'visibility:hidden;');
         $('#rt-container-cd').attr('style', 'visibility:visible;'); 
+        $('#rt-container-brick').attr('style', 'visibility:hidden;');
       }
 
       function setBrickVisible () {
+        $('#rt-container-flappy').attr('style', 'visibility:hidden;');
+        $('#rt-container-cd').attr('style', 'visibility:hidden;'); 
         $('#rt-container-brick').attr('style', 'visibility:visible;'); 
       }
     </script>
