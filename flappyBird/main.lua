@@ -26,7 +26,7 @@ local group = display.newGroup()
 
 function init()
 	--/*************CYRUS PLAYER/BG STUFF****************//
-	player= display.newImageRect("images/Player.png",40,40)
+	player= display.newImageRect("images/Bird.png",40,40)
 	player.x = player_x
 	player.y = player_y
 	player.name = "player"
@@ -45,7 +45,7 @@ function init()
 	scoreText = display.newText(options)
 	
 
-	background =display.newImageRect("images/Background.png",_W,_H)
+	background =display.newImageRect("images/BackgroundF.png",_W,_H)
 	background.x = background_x
 	background.y = background_y
 	
