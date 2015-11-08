@@ -1,5 +1,5 @@
 <?php
-session_start();
+$test = "abhi";
 ?>
 
 <html>

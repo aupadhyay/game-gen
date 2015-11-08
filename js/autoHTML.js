@@ -27,9 +27,13 @@ var flappyArray = new Array(new Array("Title", 0),
 var div = document.getElementById('fb-form');
 for (var i = 0; i <= flappyArray.length - 1; i++) {
 	if(flappyArray[i][1] == 1) { //Image Ex. Paddle
-		div.innerHTML = div.innerHTML + '<p class="<?php echo "class";?>">' + flappyArray[i][0] + ': </p>  <input type="file" theme="flappy" name="' + flappyArray[i][0]+ '" class="formObject" rt-target="'+ flappyArray[i][0]+'Image"> <br>';
+		div.innerHTML = div.innerHTML + '<p class="<?php echo $test;?>">' + flappyArray[i][0] + ': </p>  <input type="file" theme="flappy" name="' + flappyArray[i][0]+ '" class="formObject" rt-target="'+ flappyArray[i][0]+'Image"> <br>';
 	}else if(flappyArray[i][1] == 0) { //Text Ex.Title
 		div.innerHTML = div.innerHTML + '<p class="form-label">' + flappyArray[i][0] + ': </p>  <input type="text" name="' + flappyArray[i][0]+ '" class="formObject"> <br>';
 	}
 	
 };
+
+
+
+
