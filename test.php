@@ -2,5 +2,7 @@
 require('upload.php');
 uploadImage("testing");
 ?>
-
-<input type="file" name="testing">
+<form action="test.php">
+	<input type="file" name="testing">
+	<input type="submit">
+</form>
