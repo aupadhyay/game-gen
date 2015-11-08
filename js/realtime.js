@@ -21,7 +21,10 @@ $(document).ready(function() {
 			reader.onload = function (e) {
 				var target = $image.attr('rt-target');
 				console.log(target);
-				$.ajax({
+				$('#' + target).attr('src', e.target.result);
+			};
+			alert("lolz");
+			$.ajax({
 					url: "../processxy.php", // Url to which the request is send
 					type: "POST",             // Type of request to be send, called as method
 					data: { target : $image.attr('name'), theme: $image.attr('theme') }, // Data sent to server, a set of key/value pairs (i.e. form fields and values)
@@ -43,10 +46,6 @@ $(document).ready(function() {
        				error:function(exception){alert('Exeption:'+exception);},
 					processData:false        // To send DOMDocument or non processed data file it is set to false
 				});
-				
-
-				$('#' + target).attr('src', e.target.result);
-			};
 			reader.readAsDataURL(this.files[0]);
 		});
 	});
