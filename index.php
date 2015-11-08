@@ -42,7 +42,7 @@
         </div>
 
         <div class="cd">
-          <button type="button" class="theme" id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">Flappy Bird</button>
+          <button type="button" class="theme" id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">Fall N' Tap</button>
           <div id="cd-collapse" class="collapse out">
             <form class="form-setup" id="formCD" action="processCD.php" method="POST" enctype="multipart/form-data">
               <div class="cd-form" id="cd-form">
@@ -76,8 +76,8 @@
             <img id="Pause-ButtonImage" class="rt-object" src="none.png" width="20" height="20" style="margin-left: 280px; margin-top: 20px;">
             <img id="Enemy1Image" class="rt-object" src="none.png" width="50" height="50" style="margin-left: 124px; margin-top: 231px;">
             <img id="Enemy2Image" class="rt-object" src="none.png" width="50" height="50" style="margin-left: 164px; margin-top: 231px;">
-            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 124px; margin-top: 231px;">
-            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 164px; margin-top: 231px;">
+            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 114px; margin-top: 231px;">
+            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 174px; margin-top: 231px;">
             <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 124px; margin-top: 231px;">
           </div>
         </div>
