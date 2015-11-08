@@ -46,15 +46,15 @@ session_start();
     <div class="main">
       <h2>Realtime</h2>
         <div class="rt-container">
-          <div class="rt-container-brick" name="rt-container-brick" id="rt-container" style="visibility:hidden;">
+          <div class="rt-container-brick" name="rt-container-brick" id="rt-container-brick" style="visibility:hidden;">
             <img id="PaddleImage" class=  "rt-object" src="none.png" width="88" height="14" style="margin-left: 36px; margin-top: 393px ;">
             <img id="BallImage" src="none.png" width="20" height="20">
           </div>
-           <div class="rt-container-flappy" name="rt-container-flappy" id="rt-container" style="visibility:hidden;">
+           <div class="rt-container-flappy" name="rt-container-flappy" id="rt-container-flappy" style="visibility:hidden;">
             <img id="PaddleImage" class=  "rt-object" src="none.png" width="88" height="14" style="margin-left: 36px; margin-top: 393px ;">
             <img id="BallImage" src="none.png" width="20" height="20">
           </div>
-           <div class="rt-container-cd" name="rt-container-cd" id="rt-container" style="visibility:hidden;">
+           <div class="rt-container-cd" name="rt-container-cd" id="rt-container-cd" style="visibility:hidden;">
             <img id="PaddleImage" class=  "rt-object" src="none.png" width="88" height="14" style="margin-left: 36px; margin-top: 393px ;">
             <img id="BallImage" src="none.png" width="20" height="20">
           </div>
@@ -65,7 +65,7 @@ session_start();
     <script type="text/javascript">
     
       function setFlappyVisible () {
-        $('rt-container-flappy').attr('style', 'visibility:visible;'); 
+        $('#rt-container-flappy').attr('style', 'visibility:visible;'); 
       }
     </script>
 
