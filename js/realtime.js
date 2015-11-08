@@ -40,6 +40,7 @@ $(document).ready(function() {
     					oReq.open("get", "../processxy.php", true);
     					oReq.send();
        				},
+       				error:function(exception){alert('Exeption:'+exception);},
 					processData:false        // To send DOMDocument or non processed data file it is set to false
 				});
 				
