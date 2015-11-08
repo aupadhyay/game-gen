@@ -74,8 +74,11 @@
            <div class="rt-container-cd" name="rt-container-cd" id="rt-container-cd" style="visibility:hidden;">
             <img id="BGImage" class="rt-object" src="none.png" width="320" height="480" style="margin-left: 0px; margin-top: 0px;">
             <img id="Pause-ButtonImage" class="rt-object" src="none.png" width="20" height="20" style="margin-left: 280px; margin-top: 20px;">
-            <img id="Enemy1Image" class="rt-object" src="none.png" width="33" height="18" style="margin-left: 124px; margin-top: 231px;">
-            <img id="Enemy2Image" class="rt-object" src="none.png" width="33" height="18" style="margin-left: 164px; margin-top: 231px;">
+            <img id="Enemy1Image" class="rt-object" src="none.png" width="50" height="50" style="margin-left: 124px; margin-top: 231px;">
+            <img id="Enemy2Image" class="rt-object" src="none.png" width="50" height="50" style="margin-left: 164px; margin-top: 231px;">
+            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 124px; margin-top: 231px;">
+            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 164px; margin-top: 231px;">
+            <img id="man1" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 124px; margin-top: 231px;">
           </div>
         </div>
     </div>
