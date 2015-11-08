@@ -9,6 +9,7 @@
 
 .rt-object{
 	overflow: auto;
+	position: absolute;
 }
 
 .theme{
