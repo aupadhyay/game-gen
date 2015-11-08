@@ -77,8 +77,8 @@
             <img id="Enemy1Image" class="rt-object" src="none.png" width="50" height="50" style="margin-left: 35px; margin-top: 60px;">
             <img id="Enemy2Image" class="rt-object" src="none.png" width="50" height="50" style="margin-left: 235px; margin-top: 60px;">
             <img id="Man1Image" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 30px; margin-top: 360px;">
-            <img id="Man1Image" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 140px; margin-top: 360px;">
-            <img id="Man1Image" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 250px; margin-top: 360px;">
+            <img id="Man2Image" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 140px; margin-top: 360px;">
+            <img id="Man3Image" class="rt-object" src="none.png" width="40" height="80" style="margin-left: 250px; margin-top: 360px;">
           </div>
         </div>
     </div>

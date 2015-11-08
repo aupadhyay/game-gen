@@ -38,6 +38,8 @@ var cdArray = new Array(new Array("Pause-Button", 1),
 					  	new Array("Enemy1", 1),
 					  	new Array("Enemy2", 1),
 					  	new Array("Man1", 1),
+					  	new Array("Man2", 1),
+					  	new Array("Man3", 1),
 					  	new Array("BG", 1));
 var div = document.getElementById('cd-form');
 for (var i = 0; i <= cdArray.length - 1; i++) {
