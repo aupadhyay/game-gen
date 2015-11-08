@@ -10,7 +10,7 @@
 
 	// Initialize archive object
 	$zip = new ZipArchive();
-	$zip->open('file.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
+	$zip->open('flappyBird.zip', ZipArchive::CREATE | ZipArchive::OVERWRITE);
 
 	// Create recursive directory iterator
 	/** @var SplFileInfo[] $files */
@@ -34,7 +34,7 @@
 // Zip archive will be created only after closing object
 $zip->close();
 
-$file = 'file.zip';
+$file = 'flappyBird.zip';
 
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
