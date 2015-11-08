@@ -16,13 +16,13 @@ for (var i = 0; i <= brickArray.length - 1; i++) {
 
 
 var flappyArray = new Array(new Array("Title", 0),
-						new Array("Author", 0),
 						new Array("Bird", 1),
 					  	new Array("TopPipes", 1),
 					  	new Array("BottomPipes", 1),
 					  	new Array("Ground", 1),
 					  	new Array("BackgroundF", 1),
 					  	new Array("Distance-Between-Pipes", 0),
+					  	new Array("Scroll-Speed", 0),
 					  	new Array("Gravity", 0));
 var div = document.getElementById('fb-form');
 for (var i = 0; i <= flappyArray.length - 1; i++) {
