@@ -17,7 +17,7 @@
     <div class="main">
       <h2>Setup</h2>
         <div class="bb">
-          <button type="button" class="theme" id="theme1" data-toggle="collapse" data-target="#bb-collapse" onclick="setBrickVisible()">Brick Breaker</button>
+          <button type="button" class="btn btn-danger" id="theme1" data-toggle="collapse" data-target="#bb-collapse" onclick="setBrickVisible()">Brick Breaker</button>
           <div id="bb-collapse" class="collapse out">
             <form class="form-setup" id="form" action="process.php" method="POST" enctype="multipart/form-data">
               <div class="bb-form" id="bb-form">
@@ -30,7 +30,7 @@
 
 
         <div class="fb">
-          <button type="button" class="theme" id="theme2" data-toggle="collapse" data-target="#fb-collapse" onclick="setFlappyVisible()">Flappy Bird</button>
+          <button type="button" class="btn btn-danger" id="theme2" data-toggle="collapse" data-target="#fb-collapse" onclick="setFlappyVisible()">Flappy Bird</button>
           <div id="fb-collapse" class="collapse out">
             <form class="form-setup" id="formFB" action="processFlappy.php" method="POST" enctype="multipart/form-data">
               <div class="fb-form" id="fb-form">
@@ -42,7 +42,7 @@
         </div>
 
         <div class="cd">
-          <button type="button" class="theme" id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">Fall N' Tap</button>
+          <button type="button" class="btn btn-danger" id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">Fall N' Tap</button>
           <div id="cd-collapse" class="collapse out">
             <form class="form-setup" id="formCD" action="processCD.php" method="POST" enctype="multipart/form-data">
               <div class="cd-form" id="cd-form">

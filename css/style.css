@@ -69,3 +69,87 @@
 .rt-container-flappy, .rt-container-cd{
 	z-index: 10;
 }
+
+.main{
+	width:50%;
+	height:100%;
+	margin-top:0px; 
+	float:left;
+	padding-left: 50px;
+	padding-top: 20px;
+	background-color: DDDDDD;
+}
+
+.rt-object{
+	overflow: auto;
+}
+
+.theme{
+	width: 95%;
+  	padding: 6px 12px;
+  	margin-bottom: 10px;
+  	font-size: 14px;
+  	text-align: left;
+  	border: 1px solid transparent;
+  	border-radius: 4px;
+}
+
+.form-setup {
+	text-align: center;
+
+}
+
+
+.test{
+	width:50%;
+	margin-left: 22.5%;	
+}
+
+.rt-container{
+	width: 320px;
+	height: 480px;
+	position: relative;
+	border: 1px solid black;
+}
+
+.form-label{
+	display:inline-block;
+	height:20px;
+	width: 45%;
+	float:left;
+	text-align:right;
+	margin: 0px 0px 12px 0px;
+}
+
+.formObject{
+	display:inline-block;
+	width:50%;
+	height:20px;
+	float:right;
+	text-align: left;
+	margin:0px 0px 12px 0px;
+}
+
+.rt-container-brick, .rt-container-flappy, .rt-container-cd{
+	width: 100%;
+  	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.rt-container-flappy, .rt-container-cd{
+	z-index: 10;
+}
+
+#theme1{
+	
+	margin-bottom: 20px
+}
+
+#theme2{
+	margin-bottom: 20px
+}
+#theme3{
+	margin-bottom: 20px
+}
