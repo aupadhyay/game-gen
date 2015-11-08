@@ -47,7 +47,7 @@ session_start();
       <h2>Realtime</h2>
         <div class="rt-container">
           <div class="rt-container-brick" name="rt-container-brick" id="rt-container-brick" style="visibility:hidden;">
-            <img id="PaddleImage" class=  "rt-object" src="none.png" width="100" height="100" style="margin-left: 36px; margin-top: 393px ;">
+            <img id="PaddleImage" class="rt-object" src="none.png" width="100" height="100" style="margin-left: 36px; margin-top: 393px ;">
             <img id="BallImage" src="none.png" width="100" height="100">
           </div>
            <div class="rt-container-flappy" name="rt-container-flappy" id="rt-container-flappy" style="visibility:hidden;">
