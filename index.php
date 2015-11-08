@@ -32,7 +32,7 @@
         <div class="fb">
           <button type="button" class="theme" id="theme2" data-toggle="collapse" data-target="#fb-collapse" onclick="setFlappyVisible()">Flappy Bird</button>
           <div id="fb-collapse" class="collapse out">
-            <form class="form-setup" id="form" action="process.php" method="POST" enctype="multipart/form-data">
+            <form class="form-setup" id="formFB" action="processFlappy.php" method="POST" enctype="multipart/form-data">
               <div class="fb-form" id="fb-form">
                <!-- Added Stuff from Javascript !-->
               </div>
