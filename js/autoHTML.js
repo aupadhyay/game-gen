@@ -1,6 +1,6 @@
 var array = new Array(new Array("Paddle", 1),
 					  new Array("Ball", 1),
-					  new Array("Brick", 1)
+					  new Array("Brick", 1),
 					  new Array("Background", 0));
 var div = document.getElementById('bb-form');
 for (var i = 0; i <= array.length - 1; i++) {
