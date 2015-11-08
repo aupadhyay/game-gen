@@ -24,7 +24,7 @@ var flappyArray = new Array(new Array("Title", 0),
 					  	new Array("Ground", 1),
 					  	new Array("Distance-Between-Pipes", 0),
 					  	new Array("Gravity", 0));
-var div = document.getElementById('bb-form');
+var div = document.getElementById('fb-form');
 for (var i = 0; i <= flappyArray.length - 1; i++) {
 	if(flappyArray[i][1] == 1) { //Image Ex. Paddle
 		div.innerHTML = div.innerHTML + '<p class="form-label">' + flappyArray[i][0] + ': </p>  <input type="file" name="' + flappyArray[i][0]+ '" class="formObject" rt-target="'+ flappyArray[i][0]+'Image"> <br>';

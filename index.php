@@ -28,6 +28,19 @@ session_start();
             </form>
           </div>
         </div>
+
+
+        <div class="fb">
+          <button type="button" class="theme" data-toggle="collapse" data-target="#fb-collapse">Flappy Bird</button>
+          <div id="fb-collapse" class="collapse out">
+            <form class="form-setup" id="form" action="process.php" method="POST" enctype="multipart/form-data">
+              <div class="fb-form" id="fb-form">
+               <!-- Added Stuff from Javascript !-->
+              </div>
+              <input type="submit">
+            </form>
+          </div>
+        </div>
     </div>
 
     <div class="main">
