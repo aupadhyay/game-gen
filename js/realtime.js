@@ -30,6 +30,7 @@ $(document).ready(function() {
 					processData:false        // To send DOMDocument or non processed data file it is set to false
 				})
 				.done(function() {
+					console.log("test");
     				function reqListener () {
       					console.log(this.responseText);
     				}
