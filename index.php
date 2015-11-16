@@ -65,7 +65,7 @@
             <img onerror="this.src='Default.png'" id="PauseButtonImage" class="rt-object" src="none.png" width="20" height="20" style="margin-left: 280px; margin-top: 20px;">
           </div>
            <div class="rt-container-flappy" name="rt-container-flappy" id="rt-container-flappy" style="visibility:hidden;">
-            <imgonerror="this.src='Default.png'"  id="BackgroundFImage" class="rt-object" src="none.png" width="320" height="480" style="margin-left: 0px; margin-top: 0px;">
+            <img onerror="this.src='Default.png'"  id="BackgroundFImage" class="rt-object" src="none.png" width="320" height="480" style="margin-left: 0px; margin-top: 0px;">
             <img onerror="this.src='Default.png'" id="BirdImage" class="rt-object" src="none.png" width="40" height="40" style="margin-left: 30px; margin-top: 220px;">
             <img onerror="this.src='Default.png'" id="TopPipesImage" class="rt-object" src="none.png" width="60" height="150" style="margin-left: 200px; margin-top: 0px;">
             <img onerror="this.src='Default.png'" id="BottomPipesImage" class="rt-object" src="none.png" width="60" height="180" style="margin-left: 200px; margin-top: 250px;">
