@@ -45,30 +45,30 @@ function init()
 	scoreText = display.newText(options)
 	
 
-	backgroundf =display.newImageRect("images/backgroundf.png",_W,_H)
-	backgroundf.x = backgroundf_x
-	backgroundf.y = backgroundf_y
+	background =display.newImageRect("images/bg.png",_W,_H)
+	background.x = background_x
+	background.y = background_y
 	
 
-	ground1 = display.newImageRect("images/ground.png", _W, 50)
-	ground1.anchorX = ground_anchorX
-	ground1.anchorY = ground_anchorY
+	ground1 = display.newImageRect("images/groundFB.png", _W, 50)
+	ground1.anchorX = ground_anchor_x
+	ground1.anchorY = ground_anchor_y
 	physics.addBody(ground1, "static")
 	ground1.x = ground_x
 	ground1.y = ground_y
 	ground1.name = "ground"
 
-	ground2 = display.newImageRect("images/ground.png", _W, 50)
+	ground2 = display.newImageRect("images/groundFB.png", _W, 50)
 	ground2.anchorX = 0
-	ground2.anchorY = ground_anchorY
+	ground2.anchorY = ground_anchor_y
 	ground2.x = (ground1.width * 2) - ground1.width
 	ground2.y = ground_y
 	ground2.name = "ground"
 	physics.addBody(ground2, "static")
 
-	ground3 = display.newImageRect("images/ground.png", _W, 50)
+	ground3 = display.newImageRect("images/groundFB.png", _W, 50)
 	ground3.anchorX = 0
-	ground3.anchorY = ground_anchorY
+	ground3.anchorY = ground_anchor_y
 	ground3.x = (ground1.width * 3) - ground1.width
 	ground3.y = ground_y
 	physics.addBody(ground3, "static")
@@ -76,12 +76,12 @@ function init()
 
 
 	tapToPlay = display.newImageRect("images/tapToPlayFB.png", _W + 30, _H )
-	tapToPlay.x = _W/2
-	tapToPlay.y = _H/2
+	tapToPlay.x = tapToPlay_x
+	tapToPlay.y = tapToPlay_y
 	tapToPlay.alpha = 0.7
 	tapToPlay:addEventListener('tap', startGame)
 	
-	group:insert(backgroundf)
+	group:insert(background)
 	group:insert(ground1)
 	group:insert(ground2)
 	group:insert(ground3)
@@ -90,16 +90,16 @@ function init()
 	--/*************PIPES****************//
 	for i=1,3 do
 		pipeGap = math.random(firstIntervalPipeGap,secondIntervalPipeGap)
-		pipesTop[i] = display.newImageRect("images/pipesTop.png", 60, math.random(20,_H-pipeGap-20-ground1.height))
-		pipesTop[i].anchorY = pipesTop_anchorY
+		pipesTop[i] = display.newImageRect("images/pipe.png", 60, math.random(20,_H-pipeGap-20-ground1.height))
+		pipesTop[i].anchorY = pipesTop_anchor_y
 		pipesTop[i].x = i * distanceBetweenPipes
 		pipesTop[i].y = pipesTop_y
 		group:insert(pipesTop[i])
 		physics.addBody(pipesTop[i], "static")
 		pipesTop[i].name = "pipe"
 
-		pipesBottom[i] = display.newImageRect("images/pipesBottom.png", 60, _H - pipeGap - pipesTop[i].height - ground1.height)
-		pipesBottom[i].anchorY = pipesBottom_anchorY
+		pipesBottom[i] = display.newImageRect("images/pipe.png", 60, _H - pipeGap - pipesTop[i].height - ground1.height)
+		pipesBottom[i].anchorY = pipesBottom_anchor_y
 		pipesBottom[i].x = i * distanceBetweenPipes
 		pipesBottom[i].y = pipesBottom_y
 		group:insert(pipesBottom[i])

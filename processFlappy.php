@@ -1,6 +1,6 @@
 <?php
 	require('uploadFlappy.php');
-	$items = array('Bird', 'TopPipes', 'BottomPipes', 'Ground', 'BackgroundF');
+	$items = array('player', 'pipesTop', 'pipesBottom', 'ground', 'backgroundf');
 	
 	for ($i=0; $i <= 4; $i++) { 
 		uploadImage($items[$i]);

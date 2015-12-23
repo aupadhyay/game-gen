@@ -32,19 +32,19 @@ local group = display.newGroup()
 
 local function init()
 
-	backgroundcd = display.newImageRect("images/bg.png", _W, _H)
+	backgroundcd = display.newImageRect("images/backgroundcd.png", _W, _H)
 	backgroundcd.x = backgroundcd_x
 	backgroundcd.y = backgroundcd_y
 
-	man1 = display.newImageRect("images/man.png", 40, 80)
+	man1 = display.newImageRect("images/man1.png", 40, 80)
 	man1.x = man1_x
 	man1.y = man1_y
 
-	man2 = display.newImageRect("images/man.png", 40, 80)
+	man2 = display.newImageRect("images/man2.png", 40, 80)
 	man2.x = man2_x
 	man2.y = man2_y
 
-	man3 = display.newImageRect("images/man.png", 40, 80)
+	man3 = display.newImageRect("images/man3.png", 40, 80)
 	man3.x = man3_x
 	man3.y = man3_y
 
@@ -171,7 +171,7 @@ function startGame(e)
 		cats[i].x = math.random(_W/10, _W-_W/10)
 		cats[i].y = math.random(-2*_H, -0.5*_H)
 		cats[i].name = "enemy"
-		dogs[i] = display.newImageRect("images/dog1.png", 50, 67) -- 0.75
+		dogs[i] = display.newImageRect("images/dog.png", 50, 67) -- 0.75
 		dogs[i].x = math.random(_W/10, _W-_W/10)
 		dogs[i].y = math.random(-2*_H, -0.5*_H)
 		dogs[i].name = "enemy"

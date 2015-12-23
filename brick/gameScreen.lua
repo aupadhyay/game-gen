@@ -206,14 +206,14 @@ end
 
 	--Objects
 
-	background = display.newImageRect("images/Background.png",320,480)
+	background = display.newImageRect("images/background.png",320,480)
 	background.x = _W/2
 	background.y = _H/2
 	group:insert(background)
 
 
 
-	paddle = display.newImageRect( "images/Paddle.png",60,12 )
+	paddle = display.newImageRect( "images/paddle.png",60,12 )
 	paddle.x = _W/2
 	paddle.y = _H - 50
 	paddle:addEventListener( "touch", movePaddle )
@@ -222,7 +222,7 @@ end
 	physics.addBody( paddle, "static", {density=0.3, friction=0.2, bounce=0.5 } )
 	group:insert(paddle)
 
-	ball = display.newImageRect( "images/Ball.png",12,12 )
+	ball = display.newImageRect( "images/ball.png",12,12 )
 	ball.x = _W/2+1
 	ball.y = _H/2 +175
 	ball:addEventListener( "collision", hitBrick )
@@ -249,7 +249,7 @@ end
 
 			if (level[i][j] == 1) then
 				print "in the brick maker"
-				brick[i+j] = display.newImageRect("images/Brick.png",33,18)
+				brick[i+j] = display.newImageRect("images/brick.png",33,18)
 				brick[i+j].x = _W/2 + 33*(i-4.9)
 				brick[i+j].y = _H/2 - 18*j
 				physics.addBody(brick[i+j],"static",{density = 0.1, friction = 0.3, bounce = 0.5})
