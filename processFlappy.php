@@ -2,9 +2,9 @@
 	require('uploadFlappy.php');
 	$items = array('player', 'pipesTop', 'pipesBottom', 'ground', 'backgroundf');
 	
-	for ($i=0; $i <= 4; $i++) { 
-		uploadImage($items[$i]);
-	}
+	foreach ($items as $i) {
+        uploadImage($i);
+    }
 	$customValues = fopen("flappyBird/customValues.lua", "w");
 
 	$data = "scrollSpeed_int =" . $_POST['Scroll-Speed'] . ";

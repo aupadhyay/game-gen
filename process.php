@@ -1,11 +1,9 @@
 <?php
 	require('upload.php');
 	$items = array('paddle', 'ball', 'background', 'brick');
-	
-	for ($i=0; $i <= 4; $i++) { 
-		uploadImage($items[$i]);
-	}
-	
+	foreach ($items as $i) {
+        uploadImage($i);
+    }
 	$rootPath = realpath('brick/');
 
 	// Initialize archive object

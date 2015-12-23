@@ -2,9 +2,9 @@
 	require('uploadCD.php');
 	$items = array('cat', 'dog', 'man1', 'man2', 'man3', 'backgroundcd', 'groundcd');
 	
-	for ($i=0; $i <= 4; $i++) { 
-		uploadImage($items[$i]);
-	}
+	foreach ($items as $i) {
+        uploadImage($i);
+    }
 
 	$rootPath = realpath('cd/');
 
