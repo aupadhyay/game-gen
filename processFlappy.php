@@ -5,15 +5,6 @@
 	foreach ($items as $i) {
         uploadImage($i);
     }
-	$customValues = fopen("flappyBird/customValues.lua", "w");
-
-	$data = "scrollSpeed_int =" . $_POST['Scroll-Speed'] . ";
-distanceBetweenPipes_x =" . $_POST['Distance-Between-Pipes'] .
-";firstIntervalPipeGap = 110;
-secondIntervalPipeGap = 145;" ;
-
-	fwrite($customValues, $data);
-	fclose($customValues);
 
 	$rootPath = realpath('flappyBird/');
 
