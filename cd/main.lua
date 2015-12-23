@@ -11,7 +11,7 @@ physics.start()
 physics.setGravity(0,setGravity_int)
 
 local starterTxt
-local ground
+local groundcd
 local man1
 local man2
 local man3
@@ -24,7 +24,7 @@ local cats = {}
 local dogs = {}
 local resumeBtn
 local pauseBtn
-local background
+local backgroundcd
 local gameTint
 local restartText
 local loserText
@@ -32,9 +32,9 @@ local group = display.newGroup()
 
 local function init()
 
-	background = display.newImageRect("images/bg.png", _W, _H)
-	background.x = background_x
-	background.y = background_y
+	backgroundcd = display.newImageRect("images/bg.png", _W, _H)
+	backgroundcd.x = backgroundcd_x
+	backgroundcd.y = backgroundcd_y
 
 	man1 = display.newImageRect("images/man.png", 40, 80)
 	man1.x = man1_x
@@ -48,10 +48,10 @@ local function init()
 	man3.x = man3_x
 	man3.y = man3_y
 
-	ground = display.newRect(_W/2, _H, _W, 40)
-	ground.anchorX = 0.5
-	ground.anchorY = 1
-	ground:setFillColor(0,255,0)
+	groundcd = display.newRect(_W/2, _H, _W, 40)
+	groundcd.anchorX = 0.5
+	groundcd.anchorY = 1
+	groundcd:setFillColor(0,255,0)
 
 	barrierLeft = display.newRect(0, _H/2, 1, 1000)
 	physics.addBody(barrierLeft, "static")
@@ -125,8 +125,8 @@ local function init()
 
 	
 
-	group:insert(background)
-	group:insert(ground)
+	group:insert(backgroundcd)
+	group:insert(groundcd)
 	group:insert(man1)
 	group:insert(man2)
 	group:insert(man3)

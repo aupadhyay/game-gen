@@ -1,2 +1,3 @@
-setGravity_int = 0.5
-enemyNumber = 3
+scrollSpeed_int =;
+distanceBetweenPipes_x =;firstIntervalPipeGap = 110;
+secondIntervalPipeGap = 145;

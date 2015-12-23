@@ -1,38 +1,36 @@
 tapToPlay_x = 160
 tapToPlay_y = 240
-tapToPlay_anchor_x = 0.5
-tapToPlay_anchor_y = 0.5
-
-background_x = 160
-background_y = 240
-background_anchor_x = 0.5
-background_anchor_y = 0.5
-
+tapToPlay_anchorX = 0.5
+tapToPlay_anchorY = 0.5
+tapToPlay_width = 320
+tapToPlay_height = 480
+backgroundf_x = 160
+backgroundf_y = 240
+backgroundf_anchorX = 0.5
+backgroundf_anchorY = 0.5
+backgroundf_width = 320
+backgroundf_height = 480
 player_x = 50
 player_y = 240
-player_anchor_x = 0.5
-player_anchor_y = 0.5
+player_anchorX = 0.5
+player_anchorY = 0.5
 player_width = 40
 player_height = 40
-
-pipesTop_x = 150 
+pipesTop_x = 240
 pipesTop_y = 0
-pipesTop_anchor_x = 1
-pipesTop_anchor_y = 0
+pipesTop_anchorX = 1
+pipesTop_anchorY = 0
 pipesTop_width = 60
 pipesTop_height = 150
-
-pipesBottom_x = 150
+pipesBottom_x = 300
 pipesBottom_y= 430
-pipesBottom_anchor_x = 1
-pipesBottom_anchor_y = 1
-pipesTop_width = 60
-pipesTop_height = 180
-
-
+pipesBottom_anchorX = 1
+pipesBottom_anchorY = 1
+pipesBottom_width = 60
+pipesBottom_height = 180
 ground_x = 0
 ground_y = 480
-ground_anchor_x = 0
-ground_anchor_y = 1
-pipesTop_width = 320
-pipesTop_height = 50
+ground_anchorX = 0
+ground_anchorY = 1
+ground_width = 320
+ground_height = 50
