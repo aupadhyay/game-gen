@@ -1,6 +1,6 @@
 <?php
 	require('uploadCD.php');
-	$items = array('cat', 'dog', 'man1', 'man2', 'man3', 'backgroundcd', 'groundcd');
+	$items = array('cat', 'dog', 'man1', 'man2', 'man3', 'backgroundcd', 'groundcd', "pauseBtn");
 	
 	foreach ($items as $i) {
         uploadImage($i);
