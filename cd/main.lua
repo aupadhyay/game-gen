@@ -93,7 +93,7 @@ local function init()
 		-- body
 	end
 
-	pauseBtn = display.newImageRect("images/pause.png", 15, 15)
+	pauseBtn = display.newImageRect("images/pauseBtn.png", 15, 15)
 	pauseBtn.x = pauseBtn_x
 	pauseBtn.y = pauseBtn_y
 	pauseBtn:setFillColor(0,0,0)
