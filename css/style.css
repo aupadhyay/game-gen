@@ -42,6 +42,7 @@
 .rt-container{
 	width: 320px;
 	height: 480px;
+	top:150px;
 	position: relative;
 	border: 1px solid black;
 }
