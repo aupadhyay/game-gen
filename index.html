@@ -176,6 +176,16 @@
                   </div>
                   <br>
                   <div class="input-group">
+                    <span class="input-group-addon">Email</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Confirm Email</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
                     <span class="input-group-addon">Password</span>
                     <input type="password" class="form-control">
                   </div>
@@ -222,7 +232,8 @@
     </div>
 
     <div class="main">
-      <h2 style = "font-family:Helvetica">Games</h2>
+      <h2 style = "font-family:Helvetica">Games:</h2>
+      <br>
         <div class="bb">
           <button type="button" class = "theme1" id="theme1" data-toggle="collapse" data-target="#bb-collapse" onclick="setBrickVisible()">Breakout</button>
           <div id="bb-collapse" class="collapse out">
