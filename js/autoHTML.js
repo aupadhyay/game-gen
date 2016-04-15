@@ -99,9 +99,7 @@ var flappyArray = new Array(
 					  	new Array("pipesTop", 1, "Top Pipes"),
 					  	new Array("pipesBottom", 1, "Bottom Pipes"),
 					  	new Array("ground", 1, "Ground"),
-					  	new Array("backgroundf", 1, "Background"),
-					  	new Array("Distance-Between-Pipes", 0, "Distance Between Pipes"),
-					  	new Array("Scroll-Speed", 0, "Scroll Speed"));
+					  	new Array("backgroundf", 1, "Background"));
 var div = document.getElementById('fb-form');
 for (var i = 0; i <= flappyArray.length - 1; i++) {
 	if(flappyArray[i][1] == 1) { //Image Ex. Paddle
