@@ -232,7 +232,21 @@
     </div>
 
     <div class="main">
-      <h2 style = "font-family:Helvetica">Games:</h2>
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h2 class="display-3">Instructions</h2>
+            <p class="lead">Let's start making games! Just follow these steps and master the game-generating process.</p>
+            <ol>
+                <li><a href="https://coronalabs.com/products/corona-sdk/">Download the Corona simulator</a></li>
+                <li> Choose one of the game templates we've pre-designed for you </li>
+                <li> Once you see the dropdown menu, click "choose file" for each game element listed on the template in order to input your own images</li>
+                <li> Hit "Submit" and download the zip file for the game you've chosen</li>
+                <li> Launch Corona Simulator and open up the zip file you downloaded in order to run your game </li>
+                <li>Run your newly made game!</li>
+            </ol>
+          </div>
+        </div>
+      <h2 style = "font-family:Helvetica">Games</h2>
       <br>
         <div class="bb">
           <button type="button" class = "theme1" id="theme1" data-toggle="collapse" data-target="#bb-collapse" onclick="setBrickVisible()">Breakout</button>
