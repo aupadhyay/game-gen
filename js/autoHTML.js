@@ -86,7 +86,7 @@ var brickArray = new Array(
 var div = document.getElementById('bb-form');
 for (var i = 0; i <= brickArray.length - 1; i++) {
 	if(brickArray[i][1] == 1) { //Image Ex. Paddle
-		div.innerHTML = div.innerHTML + '<p class="form-label">' + brickArray[i][2] + ': </p>  <input type="file" theme="brick" name="' + brickArray[i][0]+ '"id="'+ brickArray[i][0]+'" class="formObject" rt-target="'+ brickArray[i][0]+'Image"> <br>';
+		div.innerHTML = div.innerHTML + '<p class="form-label">' + brickArray[i][2] + ': </p>  <input type="file" accept=".png" theme="brick" name="' + brickArray[i][0]+ '"id="'+ brickArray[i][0]+'" class="formObject" rt-target="'+ brickArray[i][0]+'Image"> <br>';
 	}else if(brickArray[i][1] == 0) { //Text Ex.Title
 		div.innerHTML = div.innerHTML + '<p class="form-label">' + brickArray[i][2] + ': </p>  <input type="text" name="' + brickArray[i][2]+ '" class="formObject"> <br>';
 	}
@@ -103,7 +103,7 @@ var flappyArray = new Array(
 var div = document.getElementById('fb-form');
 for (var i = 0; i <= flappyArray.length - 1; i++) {
 	if(flappyArray[i][1] == 1) { //Image Ex. Paddle
-		div.innerHTML = div.innerHTML + '<p class="form-label">' + flappyArray[i][2] + ': </p>  <input type="file" theme="brick" name="' + flappyArray[i][0]+ '"id="'+ flappyArray[i][0]+'" class="formObject" rt-target="'+ flappyArray[i][0]+'Image"> <br>';
+		div.innerHTML = div.innerHTML + '<p class="form-label">' + flappyArray[i][2] + ': </p>  <input type="file"accept=".png" theme="brick" name="' + flappyArray[i][0]+ '"id="'+ flappyArray[i][0]+'" class="formObject" rt-target="'+ flappyArray[i][0]+'Image"> <br>';
 	}else if(flappyArray[i][1] == 0) { //Text Ex.Title
 		div.innerHTML = div.innerHTML + '<p class="form-label">' + flappyArray[i][2] + ': </p>  <input type="text" name="' + flappyArray[i][2]+ '" class="formObject"> <br>';
 	}
@@ -117,13 +117,12 @@ var cdArray = new Array(new Array("pauseBtn", 1, "Pause Button"),
 					  	new Array("man1", 1, "Man 1"),
 					  	new Array("man2", 1, "Man 2"),
 					  	new Array("man3", 1, "Man 3"),
-					  	new Array("backgroundcd", 1, "Background"),
-					  	new Array("groundcd", 1, "Ground"));
+					  	new Array("backgroundcd", 1, "Background"));
 var div = document.getElementById('cd-form');
 
 for (var i = 0; i <= cdArray.length - 1; i++) {
 	if(cdArray[i][1] == 1) { //Image Ex. Paddle
-		div.innerHTML = div.innerHTML + '<p class="form-label">' + cdArray[i][2] + ': </p>  <input type="file" theme="brick" name="' + cdArray[i][0]+ '"id="'+ cdArray[i][0]+'" class="formObject" rt-target="'+ cdArray[i][0]+'Image"> <br>';
+		div.innerHTML = div.innerHTML + '<p class="form-label">' + cdArray[i][2] + ': </p>  <input type="file"accept=".png" theme="brick" name="' + cdArray[i][0]+ '"id="'+ cdArray[i][0]+'" class="formObject" rt-target="'+ cdArray[i][0]+'Image"> <br>';
 		
 	}else if(cdArray[i][1] == 0) { //Text Ex.Title
 		div.innerHTML = div.innerHTML + '<p class="form-label">' + cdArray[i][2] + ': </p>  <input type="text" name="' + cdArray[i][2]+ '" class="formObject"> <br>';
