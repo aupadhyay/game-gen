@@ -243,6 +243,7 @@
                 <li> Hit "Submit" and download the zip file for the game you've chosen</li>
                 <li> Launch Corona Simulator and open up the zip file you downloaded in order to run your game </li>
                 <li>Run your newly made game!</li>
+                <li>Complete this survey to help us improve this application: <a href="http://goo.gl/forms/P2rIzriqseI9vWlC2"> Survey </a></li>
             </ol>
           </div>
         </div>
