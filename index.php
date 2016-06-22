@@ -1,5 +1,3 @@
-<?php
-?>
 
 <!--<html> 
   <head>
@@ -130,8 +128,126 @@
   </head> 
 
 <body>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Log In</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="input-group">
+                    <span class="input-group-addon">Username</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Password</span>
+                    <input type="password" class="form-control">
+                  </div>
+                  <br>
+                  <input type="submit" value="Log In" class="form-control">
+                   
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div id="myModalSignUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sign Up</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="input-group">
+                    <span class="input-group-addon">Name</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Email</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Confirm Email</span>
+                    <input type="text" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Password</span>
+                    <input type="password" class="form-control">
+                  </div>
+                  <br>
+                  <div class="input-group">
+                    <span class="input-group-addon">Confirm Password</span>
+                    <input type="password" class="form-control">
+                  </div>
+                  <br>
+                  <input type="submit" value="Sign Up" class="form-control">
+                   
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div class = "navbar navbar-default navbar-static-top">
+      <div class = "container">
+        <a href = "#" class = "navbar-brand">Blaze Studios</a>
+
+
+
+        <div class = "collapse navbar-collapse navHeaderCollapse">
+
+          
+          <ul class = "nav navbar-nav navbar-right">
+            
+            <li> <a href = "#login" data-toggle="modal" data-target="#myModal">Log In</a></li>
+            <li> <a href = "#signup" data-toggle="modal" data-target="#myModalSignUp">Sign Up</a></li>
+            
+
+          </ul>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
     <div class="main">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h2 class="display-3">Instructions</h2>
+            <p class="lead">Let's start making games! Just follow these steps and master the game-generating process.</p>
+            <ol>
+                <li><a href="https://coronalabs.com/products/corona-sdk/">Download the Corona simulator</a></li>
+                <li> Choose one of the game templates we've pre-designed for you </li>
+                <li> Once you see the dropdown menu, click "choose file" for each game element listed on the template in order to input your own images</li>
+                <li> Hit "Submit" and download the zip file for the game you've chosen</li>
+                <li> Launch Corona Simulator and open up the zip file you downloaded in order to run your game </li>
+                <li>Run your newly made game!</li>
+            </ol>
+          </div>
+        </div>
       <h2 style = "font-family:Helvetica">Games</h2>
+      <br>
         <div class="bb">
           <button type="button" class = "theme1" id="theme1" data-toggle="collapse" data-target="#bb-collapse" onclick="setBrickVisible()">Breakout</button>
           <div id="bb-collapse" class="collapse out">
@@ -158,7 +274,7 @@
         </div>
 
         <div class="cd">
-          <button type="button"  id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">FallN'Tap</button>
+          <button type="button"  id="theme3" data-toggle="collapse" data-target="#cd-collapse" onclick="setCDVisible()">Fall N' Tap</button>
           <div id="cd-collapse" class="collapse out">
             <form class="form-setup" id="formCD" action="processCD.php" method="POST" enctype="multipart/form-data">
               <div class="cd-form" id="cd-form">
@@ -173,8 +289,9 @@
     <div class="main">
       <center>
       <h2>Realtime</h2>
-      <img src="iphone.png" alt="">
+      
         <div class="rt-container">
+        <img src="css/iphone.png" alt="" style="position:absolute;width:387px;left:0;top:-137px;left:-37px;">
           <div class="rt-container-brick" name="rt-container-brick" id="rt-container-brick" style="visibility:hidden;">
              <!--<img onerror="this.src='Default.png'" id="BackgroundImage" class="rt-object"  width="320" height="480" style="margin-left: 0px; margin-top: 0px;">
             <img onerror="this.src='Default.png'" id="PaddleImage" class="rt-object"  width="60" height="12" style="margin-left: 130px; margin-top: 424px;">
