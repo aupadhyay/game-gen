@@ -207,7 +207,7 @@
         </div>
     </div>
 
-    <!--div class = "navbar navbar-default navbar-static-top">
+    <div class = "navbar navbar-default navbar-static-top">
       <div class = "container">
         <a href = "#" class = "navbar-brand">Blaze Studios</a>
 
@@ -218,8 +218,8 @@
           
           <ul class = "nav navbar-nav navbar-right">
             
-            <li> <a href = "#login" data-toggle="modal" data-target="#myModal">Log In</a></li>
-            <li> <a href = "#signup" data-toggle="modal" data-target="#myModalSignUp">Sign Up</a></li>
+            <!--li> <a href = "#login" data-toggle="modal" data-target="#myModal">Log In</a></li>
+            <li> <a href = "#signup" data-toggle="modal" data-target="#myModalSignUp">Sign Up</a></li-->
             
 
           </ul>
@@ -229,7 +229,7 @@
 
 
 
-    </div-->
+    </div>
 
     <div class="main">
         <div class="jumbotron jumbotron-fluid">
