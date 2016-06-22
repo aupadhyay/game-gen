@@ -207,7 +207,7 @@
         </div>
     </div>
 
-    <div class = "navbar navbar-default navbar-static-top">
+    <!--div class = "navbar navbar-default navbar-static-top">
       <div class = "container">
         <a href = "#" class = "navbar-brand">Blaze Studios</a>
 
@@ -229,7 +229,7 @@
 
 
 
-    </div>
+    </div-->
 
     <div class="main">
         <div class="jumbotron jumbotron-fluid">
