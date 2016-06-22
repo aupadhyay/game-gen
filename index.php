@@ -232,7 +232,7 @@
     </div>
 
     <div class="main">
-        <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron jumbotron-fluid" style="padding-top:10px;">
           <div class="container">
             <h2 class="display-3">Instructions</h2>
             <p class="lead">Let's start making games! Just follow these steps and master the game-generating process.</p>
